@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ghibli Movies</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul class="menu">
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h1>Watch the best <br> &nbsp &nbsp &nbsp of Studio Ghibli <br> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp now</h1>
+                    <p> Studio Ghibli was founded in 1985 by animated film directors Isao Takahata and Hayao Miyazaki, and has produced twenty-two feature-length films.</p>
+                    <a href="https://ghiblicollection.com" target="_blank" class="btn learn">LEARN MORE</a>
+                </div>
+                <div class="thumbnails">
+                    <p>See more ></p>
+                    <ul class="covers">
+                        <li><img src="images/cover1.jpg" onclick = "imgSlider('images/cover1.jpg'); changeDesc('Ten-year-old Chihiro Ogino and her parents are travelling to their new home when her father takes a shortcut. They enter what appears to be an abandoned amusement park that Chihiro’s father insists on exploring.')"></li>
+                        <li><img src="images/cover2.jpg" onclick = "imgSlider('images/cover2.jpg'); changeDesc('Sophie Hatter is a pretty average girl whose been left to maintain her family’s hat shop. However, she gets cursed one day by the Witch of the Waste and is turned into an old woman.')"></li>
+                        <li><img src="images/cover3.jpg" onclick = "imgSlider('images/cover3.jpg'); changeDesc('Satsuke and her younger sister, Mei, settle into an old country house with their father and wait for their mother to recover from an illness in an area hospital. As they explore their new home, they encounter playful spirits in their house and the nearby forest.')"></li>
+                        <li><img src="images/cover4.jpg" onclick = "imgSlider('images/cover4.jpg'); changeDesc('Anna Sasaki stays with her relatives in a town in the Kushiro wetlands in Hokkaido. Anna comes across a nearby abandoned mansion, where she meets Marnie, a mysterious girl who asks her to promise to keep their secrets from everyone.')"></li>
+                    </ul>
+                </div>
+                <div class="imgBox">
+                    <img src="images/cover1.jpg" class="display">
+                    <p id="description">Ten-year-old Chihiro Ogino and her parents are travelling to their new home when her father takes a shortcut. They enter what appears to be an abandoned amusement park that Chihiro's father insists on exploring.                    </p>
+                    <a href="#" class="btn">SEE MORE</a>
+                </div>
+            </div>
+        </div>
+        <script>
+            function imgSlider(anything){
+                document.querySelector('.display').src = anything;
+            }
+            function changeDesc(newDesc){
+                document.getElementById("description").innerHTML = newDesc;
+            }
+        </script>
+    </body>
+</html>
